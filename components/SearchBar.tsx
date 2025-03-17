@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { Form, Button } from "react-bootstrap";
 
 export default function SearchBar() {
   const [id, setId] = useState("");
@@ -15,17 +16,17 @@ export default function SearchBar() {
   };
 
   return (
-    <form onSubmit={handleSearch} className="flex justify-center mb-6">
-      <input
+    <Form onSubmit={handleSearch} className="d-flex justify-content-center mb-4">
+      <Form.Control
         type="text"
         value={id}
         onChange={(e) => setId(e.target.value)}
-        className="input input-bordered w-full max-w-xs"
         placeholder="กรอกไอดีของคุณ..."
+        className="w-50"
       />
-      <button type="submit" className="btn btn-primary ml-2">
+      <Button variant="primary" type="submit" className="ms-2">
         ค้นหา
-      </button>
-    </form>
+      </Button>
+    </Form>
   );
 }

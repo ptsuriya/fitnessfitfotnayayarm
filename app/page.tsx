@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { Container, Row, Col } from "react-bootstrap";
 import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
@@ -14,20 +13,22 @@ export default function Home() {
   ];
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4 text-center">ตรวจสุขภาพของคุณ</h1>
+    <Container className="py-4">
+      <h1 className="text-center mb-4">ผลการตรวจสมรรถภาพของคุณ</h1>
       <SearchBar />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <Row className="mt-4">
         {videos.map((id) => (
-          <iframe
-            key={id}
-            className="w-full h-60"
-            src={`https://www.youtube.com/embed/${id}`}
-            allowFullScreen
-          />
+          <Col key={id} xs={12} md={6} lg={4} className="mb-3">
+            <iframe
+              className="w-100"
+              style={{ height: "200px" }}
+              src={`https://www.youtube.com/embed/${id}`}
+              allowFullScreen
+            />
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 }
