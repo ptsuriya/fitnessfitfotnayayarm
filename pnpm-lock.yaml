@@ -8,21 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@popperjs/core':
-        specifier: ^2.11.8
-        version: 2.11.8
       axios:
         specifier: ^1.8.3
         version: 1.8.3
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
-      chart.js:
-        specifier: ^4.4.8
-        version: 4.4.8
-      chartjs-plugin-annotation:
-        specifier: ^3.1.0
-        version: 3.1.0(chart.js@4.4.8)
       next:
         specifier: 15.2.2
         version: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -32,9 +23,6 @@ importers:
       react-bootstrap:
         specifier: ^2.10.9
         version: 2.10.9(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react-chartjs-2:
-        specifier: ^5.3.0
-        version: 5.3.0(chart.js@4.4.8)(react@19.0.0)
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
@@ -166,9 +154,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@kurkle/color@0.3.4':
-    resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
-
   '@next/env@15.2.2':
     resolution: {integrity: sha512-yWgopCfA9XDR8ZH3taB5nRKtKJ1Q5fYsTOuYkzIIoS8TJ0UAUKAGF73JnGszbjk2ufAQDj6mDdgsJAFx5CLtYQ==}
 
@@ -294,15 +279,6 @@ packages:
 
   caniuse-lite@1.0.30001705:
     resolution: {integrity: sha512-S0uyMMiYvA7CxNgomYBwwwPUnWzFD83f3B1ce5jHUfHTH//QL6hHsreI8RVC5606R4ssqravelYO5TU6t8sEyg==}
-
-  chart.js@4.4.8:
-    resolution: {integrity: sha512-IkGZlVpXP+83QpMm4uxEiGqSI7jFizwVtF3+n5Pc3k7sMO+tkd0qxh2OzLhenM0K80xtmAONWGBn082EiBQSDA==}
-    engines: {pnpm: '>=8'}
-
-  chartjs-plugin-annotation@3.1.0:
-    resolution: {integrity: sha512-EkAed6/ycXD/7n0ShrlT1T2Hm3acnbFhgkIEJLa0X+M6S16x0zwj1Fv4suv/2bwayCT3jGPdAtI9uLcAMToaQQ==}
-    peerDependencies:
-      chart.js: '>=4.0.0'
 
   classnames@2.5.1:
     resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
@@ -489,12 +465,6 @@ packages:
       '@types/react':
         optional: true
 
-  react-chartjs-2@5.3.0:
-    resolution: {integrity: sha512-UfZZFnDsERI3c3CZGxzvNJd02SHjaSJ8kgW1djn65H1KK8rehwTjyrRKOG3VTMG8wtHZ5rgAO5oTHtHi9GCCmw==}
-    peerDependencies:
-      chart.js: ^4.1.1
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
     peerDependencies:
@@ -665,8 +635,6 @@ snapshots:
   '@img/sharp-win32-x64@0.33.5':
     optional: true
 
-  '@kurkle/color@0.3.4': {}
-
   '@next/env@15.2.2': {}
 
   '@next/swc-darwin-arm64@15.2.2':
@@ -774,14 +742,6 @@ snapshots:
       function-bind: 1.1.2
 
   caniuse-lite@1.0.30001705: {}
-
-  chart.js@4.4.8:
-    dependencies:
-      '@kurkle/color': 0.3.4
-
-  chartjs-plugin-annotation@3.1.0(chart.js@4.4.8):
-    dependencies:
-      chart.js: 4.4.8
 
   classnames@2.5.1: {}
 
@@ -978,11 +938,6 @@ snapshots:
       warning: 4.0.3
     optionalDependencies:
       '@types/react': 19.0.10
-
-  react-chartjs-2@5.3.0(chart.js@4.4.8)(react@19.0.0):
-    dependencies:
-      chart.js: 4.4.8
-      react: 19.0.0
 
   react-dom@19.0.0(react@19.0.0):
     dependencies:
