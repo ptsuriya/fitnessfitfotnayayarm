@@ -19,7 +19,7 @@ export default function Home() {
 
       <Row className="mt-4">
         {videos.map((id) => (
-          <Col key={id} xs={12} md={6} lg={4} className="mb-3">
+          <Col key={id} xs={12} md={6} className="mb-3">
             <iframe
               className="w-100"
               style={{ height: "200px" }}
