@@ -228,12 +228,12 @@ export default function SlugPage() {
           </tr>
         </tbody>
       </Table>
-
-      <Image className="mt-3" src="/1.jpg" alt="Test Image" layout="responsive" width={100} height={50} />
-      <Image className="mt-3" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} />
-      <Image className="mt-3" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} />
-      <Image className="mt-3" src="/4.jpg" alt="Test Image" layout="responsive" width={100} height={50} />
-
+      <Row xs="1" lg="2">
+      <Col><Image className="mt-3 w-100" src="/1.jpg" alt="Test Image" layout="responsive" width={100} height={50} /></Col>
+      <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
+      <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
+      <Col><Image className="mt-3 w-100" src="/4.jpg" alt="Test Image" layout="responsive" width={100} height={50} /></Col>
+      </Row>
     </Container>
 
     
