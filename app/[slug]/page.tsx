@@ -63,19 +63,19 @@ export default function SlugPage() {
             <strong>รอบเอว:</strong> {userData.Waist} ซม. ผล {userData.ResualtWaist} โดยการประมวนผลคือ 0 คือ มาตรฐาน 1 คือ เกินเกณฑ์
           </Card.Text>
           <Card.Text>
-            <strong>แรงมือขวา:</strong> {userData.RightHand} ผล {userData.ResualtRightHand} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
+            <strong>การทดสอบแตะมือด้านหลังโดย มือขวา อยู่ด้านบน:</strong> {userData.RightHand} ผล {userData.ResualtRightHand} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
           </Card.Text>
           <Card.Text>
-            <strong>แรงมือซ้าย:</strong> {userData.LeftHand} ผล {userData.ResualtLeftHand} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
+            <strong>การทดสอบแตะมือด้านหลังโดย มือซ้าย อยู่ด้านบน:</strong> {userData.LeftHand} ผล {userData.ResualtLeftHand} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
           </Card.Text>
           <Card.Text>
-            <strong>แรงแขน:</strong> {userData.Handstange} ผล {userData.ResualtHandstange} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
+            <strong>การทดสอบแรงบีบมือ :</strong> {userData.Handstange} ผล {userData.ResualtHandstange} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
           </Card.Text>
           <Card.Text>
-            <strong>นั่งงอเข่า:</strong> {userData.Sit} ผล {userData.ResualtSit} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
+            <strong>การทดสอบนั่งงอตัวไปข้างหน้า :</strong> {userData.Sit} ผล {userData.ResualtSit} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
           </Card.Text>
           <Card.Text>
-            <strong>ก้าวขึ้นลง:</strong> {userData.Step} ผล {userData.ResualtStep} โดยการประมวนผลคือ (ต่ำมาก 1 / ต่ำ 2 / ปานกลาง 3 / ดี 4 / ดีมาก 5)
+            <strong>ค่าการเต้นของหัวใจขณะทดสอบก้าวขึ้นลง:</strong> {userData.Step} ผล {userData.ResualtStep} โดยการประมวนผลคือ (ต่ำกว่ามาตรฐาน 1 / ปานกลาง 2 / สูงกว่ามาตรฐาน 3)
           </Card.Text>
         </Card.Body>
       </Card>
