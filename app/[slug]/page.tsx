@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { fetchUserData, UserData } from "@/utils/fetchData";
 import { Container, Card, Spinner, Alert, Table, Badge ,Row,Col } from "react-bootstrap";
+import Image from 'next/image';
 
 export default function SlugPage() {
   const { slug } = useParams();
@@ -227,6 +228,14 @@ export default function SlugPage() {
           </tr>
         </tbody>
       </Table>
+
+      <Image className="mt-3" src="/1.jpg" alt="Test Image" layout="responsive" width={100} height={50} />
+      <Image className="mt-3" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} />
+      <Image className="mt-3" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} />
+      <Image className="mt-3" src="/4.jpg" alt="Test Image" layout="responsive" width={100} height={50} />
+
     </Container>
+
+    
   );
 }
