@@ -195,7 +195,7 @@ export default function SlugPage() {
       <Card className="shadow mb-4">
         <Card.Body>
           <h4>สวัสดี คุณ {userData.Name}</h4>
-          <Row xs="1" md="4">
+          <Row xs="1">
           <Col><strong>เพศ:</strong> {userData.Sex}</Col>
           <Col><strong>อายุ:</strong> {userData.Age}</Col>
           <Col><strong>น้ำหนัก:</strong> {userData.weight} กก.</Col>
@@ -261,7 +261,7 @@ export default function SlugPage() {
           </tr>
         </tbody>
       </Table>
-      <Row xs="1" lg="2" className="mb-5">
+      <Row xs="1" className="mb-5">
       <Col><Image className="mt-3 w-100" src="/1.jpg" alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
@@ -285,7 +285,7 @@ export default function SlugPage() {
       </Table>
       <h2>ผลการวัดอัตราการเต้นหัวใจ: {tranVariantHeartrate(userData.ResualtStep)}</h2>
       <p dangerouslySetInnerHTML={{ __html: getHeartRateMessage(userData.ResualtStep) }} />
-      <Row xs="1" lg="2" className="mb-5">
+      <Row xs="1" className="mb-5">
       <Col><Image className="my-3 w-100" src={userData.Sex === "ชาย" ? "/4.1.jpg" : "/4.2.jpg"} alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       </Row>
     </Container>
