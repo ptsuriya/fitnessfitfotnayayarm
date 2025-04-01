@@ -161,20 +161,20 @@ export default function SlugPage() {
     }
   }
   const tranVariantHeartrate = (result: number) => {
-    if (result == 1 ) {
-      return "ต่ำมาก"; 
-    } else if (result == 2) {
-      return "ต่ำ"; 
-    }else if (result == 3) {
-      return "พอใช้"; 
-    }else if (result == 4) {
-      return "ปานกลาง"; 
-    }else if (result == 5) {
-      return "ดี"; 
-    }else if (result == 6) {
-      return "ดีมาก"; 
-    } else {
-      return "ดีเยี่ยม"; 
+    if (result === 1 ) {
+      return "ต่ำมาก";
+    } else if (result === 2) {
+      return "ต่ำ";
+    }else if (result === 3) {
+      return "พอใช้";
+    }else if (result === 4) {
+      return "ปานกลาง";
+    }else if (result === 5) {
+      return "ดี";
+    }else if (result === 6) {
+      return "ดีมาก";
+    } else if (result === 7) {
+      return "ดีเยี่ยม";
     }
   }
   const getHeartRateMessage = (result: number) => {
