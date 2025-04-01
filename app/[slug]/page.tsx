@@ -152,11 +152,11 @@ export default function SlugPage() {
   }
 
   const getBadgeVariantHeartrate = (result: number) => {
-    if (result == 1) {
+    if (result >= 3 && result < 4) {
       return "warning"; // น้อยกว่าเกณฑ์
-    } else if (result == 2) {
+    } else if (result > 5) {
       return "success"; // ปกติ
-    } else {
+    } else if (result <3 ) {
       return "danger"; // ปกติ
     }
   }
