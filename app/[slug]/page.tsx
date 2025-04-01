@@ -227,8 +227,8 @@ export default function SlugPage() {
         </tbody>
       </Table>
 
-      <div dangerouslySetInnerHTML={{ __html: getBMIMessage(userData.BMI, userData.ResualtBMI) }} />
-      <div dangerouslySetInnerHTML={{ __html: getWaistMessage(userData.Waist, userData.ResualtWaist) }} />
+      <div className="mt-4" dangerouslySetInnerHTML={{ __html: getBMIMessage(userData.BMI, userData.ResualtBMI) }} />
+      <div className="mb-5" dangerouslySetInnerHTML={{ __html: getWaistMessage(userData.Waist, userData.ResualtWaist) }} />
       <Table striped bordered hover>
         <thead className="table-warning text-center">
           <tr>
@@ -260,7 +260,7 @@ export default function SlugPage() {
           </tr>
         </tbody>
       </Table>
-      <Row xs="1" lg="2">
+      <Row xs="1" lg="2" className="mb-5">
       <Col><Image className="mt-3 w-100" src="/1.jpg" alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
@@ -283,7 +283,7 @@ export default function SlugPage() {
       </Table>
       <h2>ผลการวัดอัตราการเต้นหัวใจ: {tranVariantHeartrate(userData.ResualtStep)}</h2>
       <p dangerouslySetInnerHTML={{ __html: getHeartRateMessage(userData.ResualtStep) }} />
-      <Row xs="1" lg="2">
+      <Row xs="1" lg="2" className="mb-5">
       <Col><Image className="my-3 w-100" src={userData.Sex === "ชาย" ? "/4.1.jpg" : "/4.2.jpg"} alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       </Row>
     </Container>
