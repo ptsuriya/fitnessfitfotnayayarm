@@ -226,10 +226,11 @@ export default function SlugPage() {
 
         </tbody>
       </Table>
-
+      
       <div className="mt-4" dangerouslySetInnerHTML={{ __html: getBMIMessage(userData.BMI, userData.ResualtBMI) }} />
       <div className="mb-5" dangerouslySetInnerHTML={{ __html: getWaistMessage(userData.Waist, userData.ResualtWaist) }} />
-      <Table striped bordered hover>
+      <hr />
+      <Table className="mt-5" striped bordered hover>
         <thead className="table-warning text-center">
           <tr>
             <th>รายการทดสอบ</th>
@@ -265,7 +266,8 @@ export default function SlugPage() {
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/2.1.jpg" : "/2.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       <Col><Image className="mt-3 w-100" src={userData.Sex === "ชาย" ? "/3.1.jpg" : "/3.2.jpg"}  alt="Test Image" layout="responsive" width={100} height={50} /></Col>
       </Row>
-      <Table striped bordered hover>
+      <hr />
+      <Table className="mt-5" striped bordered hover>
         <thead className="table-warning text-center">
           <tr>
             <th>รายการทดสอบ</th>
